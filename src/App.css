@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,14 +16,29 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgba(224, 224, 224, .2);
   display: flex;
-  flex-direction: column;
+  padding: 0px 10% 0px ;
   align-items: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header h1,
+.App-header h2,
+.App-header h3,
+/* .App-header h4, */
+.App-header h5,
+.App-header h6 {
+    margin: 5px 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.App-header h4 {
+  cursor: default;
 }
 
 .App-link {
@@ -35,4 +52,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.game-selection-menu {
+    display: flex;
+    padding: 25px;
+}
+
+.game-selection-option:hover {
+    transform: scale(1.05);
+}
+.game-selection-option {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.25s;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.game-selection-image {
+  border-radius: 10px;
 }

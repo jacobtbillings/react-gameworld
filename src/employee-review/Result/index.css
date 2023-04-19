@@ -1,0 +1,77 @@
+.result-modal-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+.result-modal {
+    max-height: 80vh;
+    max-width: 600px;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: x-large;
+    font-family: "Helvetica";
+
+}
+
+.result-modal-body {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 0px 0px 20px 20px;
+    position: relative;
+    font-size: medium;
+    overflow: auto;
+    text-align: left;
+    padding-bottom: 30px;
+    font-family: "Helvetica";
+}
+
+.result-modal-close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: transparent;
+    font: 'Helvetica';
+    margin: 15px;
+    box-shadow: none;
+    outline: none;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 15px;
+    border-radius: 25%;
+}
+.result-modal-close:hover {
+    background-color: rgba(0, 0, 0, .15);
+    color: black;
+    cursor: pointer;
+
+}
+.result-modal img {
+    max-height: 40vh;
+    display: block;
+    margin: 0 auto; 
+}
+
+.results-scrim {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

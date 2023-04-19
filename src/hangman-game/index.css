@@ -1,0 +1,94 @@
+.hangman-game {
+    background-color: rgba(224, 224, 224, .2);
+}
+
+.hangman-game .page-title-hangman {
+    padding: 10px;
+    border-bottom: 0px solid #666666;
+    /* background: #000; */
+}
+.hangman-game .score {
+    height: 300px;
+    margin: 20px 0;
+}
+.hangman-game h3.win {
+    color: gold;
+}
+.hangman-game h3.loss {
+    color: red;
+}
+
+.hangman-game h3 {
+    color: white;
+}
+
+.hangman-game .answer-comp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.hangman-game .display-letter {
+    background: #666;
+    color: transparent;
+    height: 40px;
+    width: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    vertical-align: middle;
+    border-radius: 4px;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hangman-game .isFocused .display-letter {
+    background: #fff;
+}
+.hangman-game input {
+    position: absolute;
+    top: 0;
+    background: transparent;
+    width: 600px;
+    height: 100%;
+    color: transparent;
+    border: none;
+    border-color: transparent;
+    outline-width: 0;
+}
+.hangman-game input:focus {
+    outline: none;
+}
+
+.hangman-game .display-letter:empty {
+    background: transparent;
+}
+
+.hangman-game .special,
+.hangman-game .correct {
+    color: #000;
+}
+.hangman-game .isFocused .missing,
+.hangman-game .missing {
+    color: #fff;
+    background-color: red;
+}
+.hangman-game .scoreboard {
+    color: white;
+    display: flex;
+    width: 200px;
+    padding: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.hangman-game .scoreboard .wins {
+    color: gold;
+}
+.hangman-game .scoreboard .losses {
+    color: red;
+}

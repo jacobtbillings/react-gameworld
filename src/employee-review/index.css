@@ -1,0 +1,110 @@
+.employee-review {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding : 100px;
+    border-left: 25px dashed black;
+    writing-mode: horizontal-tb;
+    
+}
+
+.field-set {
+    border: 0px;
+}
+
+.paper {
+    background-color: white;
+    border-left: 2px solid black;
+    padding: 2%;
+}
+
+.page-title {
+    font-family: "Helvetica";
+    font-size: 69px;
+    font-weight: lighter;
+    max-width: 75%;
+    max-height : 33%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.show-title {
+    font-family: "Helvetica";
+    font-size: 125px;
+    max-height: 100%;
+    margin: 0px auto;
+    max-width: 100%;
+    font-weight: heavier;
+    padding-bottom: 0px;
+
+}
+
+.page-subtitle {
+    font-family: "Helvetica";
+    font-weight: normal;
+    font-size: 25px;
+    max-width: 400px;
+    padding: 0px 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.radio {
+    accent-color: black;
+    background-color: black;
+    border-radius: 5px; 
+
+}
+
+.form-submit-button {
+    position: relative;
+    border: 0px;
+    font-family: "Helvetica";
+    font-weight: bolder;
+    font-size: 120%;
+    color: white;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.form-submit-button:hover {
+    background-color:rgba(0, 0, 0, 0.9); 
+}   
+
+.form-submit-button:disabled,
+button[disabled] {
+    position: relative;
+    border: 0px;
+    font-family: "Helvetica";
+    font-weight: bolder;
+    font-size: 120%;
+    color: white;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.completion-indicator {
+    display: flex;
+    flex-direction: column;
+    margin-left: -22px;
+    position: absolute;
+}
+
+.completion-indicator-wrapper {
+    top: 200px;
+    position: sticky;
+}
+
+.indicator {
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    margin: 3px;
+}
+
+.indicator.selected {
+    background-color: black;
+}
