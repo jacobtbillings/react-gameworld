@@ -19,7 +19,7 @@ export default function Answer ({
     let count = 0
     return (
         <React.Fragment>
-            <div className='answer-comp' >
+            <div className='answer-comp' enableSpellCheck='false' >
                 <div
                     enableSpellCheck='false'
                     className={ cn({ isFocused })}>
