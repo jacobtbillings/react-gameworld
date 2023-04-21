@@ -55,6 +55,7 @@ export default function Answer ({
                     })}
                 </div>
                 <input
+                    enableSpellCheck='false'
                     ref={inputRef}
                     autoFocus='on'
                     onFocus={() => {
