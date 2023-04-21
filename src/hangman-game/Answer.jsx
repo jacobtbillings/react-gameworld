@@ -19,9 +19,9 @@ export default function Answer ({
     let count = 0
     return (
         <React.Fragment>
-            <div className='answer-comp' enableSpellCheck='false' >
+            <div className='answer-comp' spellCheck='false' >
                 <div
-                    enableSpellCheck='false'
+                    spellCheck='false'
                     className={ cn({ isFocused })}>
 
                     {map(answer.Title, (char, idx) => {
@@ -55,7 +55,7 @@ export default function Answer ({
                     })}
                 </div>
                 <input
-                    enableSpellCheck='false'
+                    spellCheck='false'
                     ref={inputRef}
                     autoFocus='on'
                     onFocus={() => {
