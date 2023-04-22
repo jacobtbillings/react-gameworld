@@ -244,7 +244,7 @@ const questions = [
                 answer: 'J',
             },
             {
-                choice: 'A coffee with cream and sugar',
+                choice: 'Tea',
                 answer: 'P',
             },
             {
@@ -261,6 +261,55 @@ const questions = [
             },
         ]
     },
+    {
+        question: 'Pick the best vacation?',
+        choices: [
+            {
+                choice: 'A getaway to Australia',
+                answer: 'J',
+            },
+            {
+                choice: 'Skiing in the Poconos',
+                answer: 'P',
+            },
+            {
+                choice: 'An all inclusive week at SANDALS Jamaica',
+                answer: 'M',
+            },
+            {
+                choice: 'A trip to Switzerland',
+                answer: 'D',
+            },
+            {
+                choice: 'Yeah nice try, you won\'t be tracking me down',
+                answer: 'C',
+            },
+        ]
+    },
+    {
+        question: 'Which would be your favorite candle scent?',
+        choices: [
+            {
+                choice: 'Cozy Fireplace and Rain',
+                answer: 'J',
+            },
+            {
+                choice: 'Warm Hugs and Vanilla',
+                answer: 'P',
+            },
+            {
+                choice: 'Cherry Cola and Laughter',
+                answer: 'M',
+            },
+            {
+                choice: 'Farmhouse Sunrise',
+                answer: 'D',
+            },
+            {
+                choice: 'Enigma of the Orient',
+                answer: 'C',
+            },
+        ]
+    },
 ]
 module.exports = questions
-// export default questions
