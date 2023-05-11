@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react'
-import { getRandomQuestions } from './get-random-questions'
-import { getResult } from './calculator'
+import { getRandomQuestions } from '../get-random-questions'
+import { getResult } from '../calculator'
 import { size, map } from 'lodash'
-import CompletionIndicator from './CompletionIndicator'
+import CompletionIndicator from '../CompletionIndicator'
 import Choices from './Choices'
 
 // TODO: display result

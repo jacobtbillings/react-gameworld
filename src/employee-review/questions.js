@@ -277,7 +277,7 @@ const questions = [
                 answer: 'M',
             },
             {
-                choice: 'A trip to Switzerland',
+                choice: 'Berlin',
                 answer: 'D',
             },
             {
@@ -287,14 +287,14 @@ const questions = [
         ]
     },
     {
-        question: 'Which would be your favorite candle scent?',
+        question: 'Which made up candle scent would be your favorite?',
         choices: [
             {
-                choice: 'Cozy Fireplace and Rain',
+                choice: 'Cozy Fireplace and Sandalwood',
                 answer: 'J',
             },
             {
-                choice: 'Warm Hugs and Vanilla',
+                choice: 'Warm Hugs and Chammomile',
                 answer: 'P',
             },
             {
@@ -307,6 +307,56 @@ const questions = [
             },
             {
                 choice: 'Enigma of the Orient',
+                answer: 'C',
+            },
+        ]
+    },
+    {
+        question: 'Which kind of chip sounds most appealing?',
+        choices: [
+            {
+                choice: 'Classic Plain Potato Chips',
+                answer: 'J',
+            },
+            {
+                choice: 'Sun Chips French Onion Chips',
+                answer: 'P',
+            },
+            {
+                choice: 'Herr\'s Jalapeño Chips',
+                answer: 'M',
+            },
+            {
+                choice: 'Homemade Red Beet Chips',
+                answer: 'D',
+            },
+            {
+                choice: 'I believe they\'re called "Fish &" Chips',
+                answer: 'C',
+            },
+        ]
+    },
+    {
+        question: '',
+        choices: [
+            {
+                choice: '',
+                answer: 'J',
+            },
+            {
+                choice: '',
+                answer: 'P',
+            },
+            {
+                choice: '',
+                answer: 'M',
+            },
+            {
+                choice: '',
+                answer: 'D',
+            },
+            {
+                choice: '',
                 answer: 'C',
             },
         ]

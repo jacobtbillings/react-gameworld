@@ -31,11 +31,12 @@
     background-color: white;
     border-radius: 10px;
     color: black;
-    padding: 0px 0px 20px 20px;
+    padding: 0px 20px auto;
+    margin: 0px 20px auto;
     position: relative;
     font-size: medium;
     overflow: auto;
-    text-align: left;
+    text-align: center;
     padding-bottom: 30px;
     font-family: "Helvetica";
 }
@@ -55,7 +56,7 @@
     align-items: center;
     justify-content: center;
     border: none;
-    font-size: 15px;
+    font-size: 10px;
     border-radius: 25%;
 }
 .result-modal-close:hover {

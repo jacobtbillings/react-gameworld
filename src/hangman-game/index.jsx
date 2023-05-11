@@ -31,46 +31,52 @@ export default function HangmanGame () {
     return (
         <div className='hangman-game'>
             <Title />
-            <Score wrongCount={wrongCount}
-                hasWon={hasWon}
-                hasLost={hasLost}
-            />
-            <Episode
-                answer={answer}
-                hasWon={hasWon}
-                hasLost={hasLost}
-                />
-            <Answer
-                answer={answer}
-                correctKeys={correctKeys}
-                hasWon={hasWon}
-                hasLost={hasLost}
-                inputRef={inputRef}
-                onNewGame={onNewGame}
-                onIncorrect={key => {
-                    const isNewWrongKey = !includes(wrongKeys, key)
-                    if (isNewWrongKey) {
-                        setWrongCount(wrongCount+1)
-                        setWrongKeys([...wrongKeys, key])
-                    }
-                }}
-                onCorrect={key => {
-                    const isNewCorrectKey = !includes(correctKeys, key)
-                    if (isNewCorrectKey) {
-                        setCorrectKeys([...correctKeys, key])
-                    }
-                }}
-            />
-            <br />
-            <br />
-            <div>
-                Wrong keys : {wrongKeys.join(', ')}
+            <div className='side-by-side'>
+                <div className='gif'>
+                    <Score wrongCount={wrongCount}
+                        hasWon={hasWon}
+                        hasLost={hasLost}
+                    />
+                </div>
+                <div>
+                    <Episode
+                        answer={answer}
+                        hasWon={hasWon}
+                        hasLost={hasLost}
+                        />
+                    <Answer
+                        answer={answer}
+                        correctKeys={correctKeys}
+                        hasWon={hasWon}
+                        hasLost={hasLost}
+                        inputRef={inputRef}
+                        onNewGame={onNewGame}
+                        onIncorrect={key => {
+                            const isNewWrongKey = !includes(wrongKeys, key)
+                            if (isNewWrongKey) {
+                                setWrongCount(wrongCount+1)
+                                setWrongKeys([...wrongKeys, key])
+                            }
+                        }}
+                        onCorrect={key => {
+                            const isNewCorrectKey = !includes(correctKeys, key)
+                            if (isNewCorrectKey) {
+                                setCorrectKeys([...correctKeys, key])
+                            }
+                        }}
+                    />
+                    <br />
+                    <br />
+                    <div>
+                        Wrong keys : {wrongKeys.join(', ')}
+                    </div>
+                    <br />
+                    <Scoreboard
+                        hasWon={hasWon}
+                        hasLost={hasLost}
+                    />
+                </div>
             </div>
-            <br />
-            <Scoreboard
-                hasWon={hasWon}
-                hasLost={hasLost}
-            />
         </div>
     )
 }

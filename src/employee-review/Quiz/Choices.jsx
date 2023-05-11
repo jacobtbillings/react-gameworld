@@ -1,5 +1,5 @@
 import React, { useMemo } from "react"
-import { getRandomItems } from "./get-random-item"
+import { getRandomItems } from '../get-random-item'
 import { map , get } from 'lodash'
 
 export default function Choices ({q, questionIdx, onUpdate, selections}) {

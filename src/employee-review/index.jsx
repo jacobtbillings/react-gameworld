@@ -4,19 +4,21 @@ import Quiz from './Quiz'
 import Result from './Result'
 import './index.css'
 
-const fillOut = <button
-    onClick={() => {
-        var inputElements = document.getElementsByTagName('input');
-        for (let i = 0; i < inputElements.length; i++) {
-            var el = inputElements[i]
-            var id = el.id
-            if (id.includes('-0')) {
-                el.click()
+const fillOut = (
+    <button
+        onClick={() => {
+            var inputElements = document.getElementsByTagName('input');
+            for (let i = 0; i < inputElements.length; i++) {
+                var el = inputElements[i]
+                var id = el.id
+                if (id.includes('-0')) {
+                    el.click()
+                }
             }
-        }
-    }}>
-    Fill out form
-</button>
+        }}>
+        Fill out form
+    </button>
+)
 
 export default function EmployeeReview () {
     const [selections, setSelections] = useState({})
@@ -27,10 +29,10 @@ export default function EmployeeReview () {
             <Title />
             <Quiz
                 selections={selections}
-                onUpdate={ (key, choiceIdx, answer) => {
+                onUpdate={ (questionIdx, choiceIdx, answer) => {
                     setSelections({
                         ...selections,
-                        [key]:{choiceIdx, answer}
+                        [questionIdx]:{choiceIdx, answer}
                     })
                 }}
                 onSubmit={ (result) => {
@@ -42,7 +44,7 @@ export default function EmployeeReview () {
             <Result
                 open={open}
                 setOpen={setOpen}
-                result = {result}    
+                result={result}    
             />
         </div>
     )

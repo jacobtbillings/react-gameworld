@@ -27,7 +27,7 @@ const results = {
   C: {
     "Character": 'Creed Bratton',
     "Quote": 'I\'m a pretty normal guy. I do one weird thing. I like to go in the women\'s room for number two. I\'ve been caught several times, and I have paid dearly.',
-    "Description": "You are a total enigma. Your past, a blurred mirror, your future, a snow covered windshield. But here you are, driving like a maniac (do you even have your license?)",
+    "Description": "You are a total enigma. Your past, a blurred mirror, your future, a snow covered windshield. But here you are, driving like a maniac (is your license even valid?)",
     "gif":'../QuizResultsGifs/CreedResult.gif',
   },
 }

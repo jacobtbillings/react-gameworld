@@ -1,3 +1,46 @@
+// const seasons = [
+//   [
+//     {
+//       title: 'Pilot',
+//       hints: [
+//         'Corporate memos go in a special filing cabinet'
+//       ]
+//     },
+//   ],
+//   [
+//     {
+//       title: 'The Dundies',
+//       hints: [
+//         'Corporate memos go in a special filing cabinet'
+//       ]
+//     },
+//   ],
+//   [
+//     {
+//       title: 'Gay Witch Hunt',
+//       hints: [
+//         'Corporate memos go in a special filing cabinet'
+//       ]
+//     },
+//   ]
+// ]
+
+// let episodeCount = 0;
+// let seenHints = [];
+
+// const episodes = seasons.map((listOfEpisodes, seasonIndex) => {
+//   const seasonNumber = seasonIndex + 1;
+
+//   return listOfEpisodes.map((episode, episodeIndex => {
+//     episodeCount++;
+//     const seasonEpisodeNum = episodeIndex + 1;
+//     const totalEpisodeNum = episodeCount;
+//     const episodeId = `${seasonNumber}:${seasonEpisodeNum}:${totalEpisodeNum}`;
+//     return { ...episode, seasonNumber, seasonEpisodeNum, totalEpisodeNum, episodeId };
+//   });
+// }).flat()
+
+
 const answers = [
   {
     "Episode Number Overall": 1,

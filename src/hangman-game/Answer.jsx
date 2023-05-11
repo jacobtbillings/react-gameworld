@@ -3,7 +3,7 @@ import {includes, map} from 'lodash'
 import cn from 'clsx'
 
 const letterRegEx = /[a-z]/
-const LIMIT = 16
+const LIMIT = 12
 export default function Answer ({
         answer,
         correctKeys,
@@ -30,7 +30,7 @@ export default function Answer ({
                         const isSpecialChar = !letterRegEx.test(lowerChar) && !isSpace
                         count++
                         const shouldWrap = count >= LIMIT
-                        const shouldBr = isSpace && shouldWrap
+                        const shouldBr = isSpace //&& shouldWrap
                         const isCorrectKey = !isSpace && !isSpecialChar && includes(correctKeys, lowerChar)
                         const isMissingChar = gameOver && !isCorrectKey && !isSpecialChar && !isSpace
                         if (shouldBr) {
@@ -87,6 +87,7 @@ export default function Answer ({
             </div>
                 <div>
                     <button
+                        className='new-game'
                         onClick={onNewGame}
                         >
                         New Game
