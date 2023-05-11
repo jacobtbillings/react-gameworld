@@ -18,8 +18,7 @@ export default function Score ({
     if (hasWon) {
         image = `./Success Images/${getRandomInt(SUCCESS_IMAGE_COUNT)}.gif`
     } else if (hasLost) {
-        // image = `./Failure Images/${getRandomInt(FAILURE_IMAGE_COUNT)}.gif`
-        image = `./Failure Images/16.gif`
+        image = `./Failure Images/${getRandomInt(FAILURE_IMAGE_COUNT)}.gif`
     }
     return (
         <img
