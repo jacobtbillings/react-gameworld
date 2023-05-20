@@ -336,30 +336,30 @@ const questions = [
             },
         ]
     },
-    {
-        question: '',
-        choices: [
-            {
-                choice: '',
-                answer: 'J',
-            },
-            {
-                choice: '',
-                answer: 'P',
-            },
-            {
-                choice: '',
-                answer: 'M',
-            },
-            {
-                choice: '',
-                answer: 'D',
-            },
-            {
-                choice: '',
-                answer: 'C',
-            },
-        ]
-    },
+    // {
+    //     question: '',
+    //     choices: [
+    //         {
+    //             choice: '',
+    //             answer: 'J',
+    //         },
+    //         {
+    //             choice: '',
+    //             answer: 'P',
+    //         },
+    //         {
+    //             choice: '',
+    //             answer: 'M',
+    //         },
+    //         {
+    //             choice: '',
+    //             answer: 'D',
+    //         },
+    //         {
+    //             choice: '',
+    //             answer: 'C',
+    //         },
+    //     ]
+    // },
 ]
 module.exports = questions
